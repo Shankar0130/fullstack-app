@@ -5,10 +5,10 @@ function App() {
   const [greeting, setGreeting] = useState('');
 
   const fetchGreeting = async () => {
-    const res = await fetch(`https://my-express-app-kr2o.onrender.com/greet?name=${name}`);
-    const data = await res.json();
-    setGreeting(data.message);
-  };
+  const res = await fetch(`https://fullstack-app-production-b872.up.railway.app/greet?name=${name}`);
+  const data = await res.json();
+  setGreeting(data.message);
+};
 
   return (
     <div style={{ padding: 40 }}>
